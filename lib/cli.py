@@ -2,7 +2,7 @@
 
 from helpers import (
     exit_program,
-    helper_1
+    helper_2
 )
 
 
@@ -13,7 +13,7 @@ def main():
         if choice == "0":
             exit_program()
         elif choice == "1":
-            helper_1()
+            helper_2()
         else:
             print("Invalid choice")
 
