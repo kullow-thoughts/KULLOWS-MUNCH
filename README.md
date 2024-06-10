@@ -75,7 +75,8 @@
 <h2>Contributors</h2>
 
 <ul>
-  <li><a href="https://github.com/kullow-thoughts">Abdulhakim Kullow</a> - Manager, Contribution</li>
+  <li><a href="https://github.com/kullow-thoughts">Abdulhakim Kullow</a> - Manager, Contribution: Abdulhakim leads project management efforts, coordinates team tasks, and facilitates collaboration among team members to ensure timely delivery of high-quality contributions.</li>
+
 </ul>
 
 <h2>License</h2>
