@@ -75,7 +75,7 @@
 <h2>Contributors</h2>
 
 <ul>
-  <li><a href="https://github.com/your_username">Your Name</a> - Role, Contribution</li>
+  <li><a href="https://github.com/kullow-thoughts">Abdulhakim Kullow</a> - Manager, Contribution</li>
 </ul>
 
 <h2>License</h2>
@@ -88,5 +88,3 @@
   <li>Any acknowledgments or credits you want to give.</li>
   <li>If you used any third-party libraries or resources, include a section to credit them.</li>
 </ul>
-
-
