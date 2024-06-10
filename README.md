@@ -1,6 +1,3 @@
-
-## Kullow's Munch
-
 <h1>Kullow's Munch</h1>
 
 <p>Kullow's Munch is a simple command-line application built with Python and SQLite, designed to facilitate food ordering. It allows users to view the menu, place orders, and view order summaries. Additionally, it features user registration and login functionality, as well as an admin interface for managing menu items.</p>
