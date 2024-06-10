@@ -38,14 +38,14 @@
   <code>pipenv install</code>
   
   <li><strong>Initialize the Database:</strong></li>
-  <code>pipenv run python database.py</code>
+  <code>pipenv run python lib/database.py</code>
 </ol>
 
 <h2>Usage</h2>
 
 <ol>
   <li><strong>Run the Application:</strong></li>
-  <code>pipenv run python main.py</code>
+  <code>pipenv run python lib/main.py</code>
 
   <li><strong>Follow On-Screen Prompts:</strong></li>
   <ul>
