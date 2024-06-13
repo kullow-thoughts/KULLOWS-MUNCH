@@ -47,9 +47,9 @@ pipenv install
 </code>
 
 <ol start="3">
-  <li>Initialize the SQLite database:</li>
+<li>Initialize the SQLite database:</li>
 <code>
-  python init_db.py
+python init_db.py
 </code>
 </ol>
 
