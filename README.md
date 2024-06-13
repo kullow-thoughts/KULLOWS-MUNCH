@@ -41,10 +41,7 @@ This Python CLI application is designed to manage a restaurant's menu and provid
 
  ## Install dependencies using Pipenv:
 
-
-<code>
-pipenv install
-</code>
+<code>pipenv install</code>
 
 
 ## Initialize the SQLite database:
@@ -58,9 +55,7 @@ pipenv install
 
 ## Run the CLI application:
 
-<code>
-pipenv run python cli.py
-</code>
+<code>pipenv run python cli.py</code>
 
 ## <strong>User Management</strong>:
 
