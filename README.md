@@ -3,7 +3,7 @@
 
 ## Overview
 
-This Python CLI application is designed to manage a restaurant's menu and provide user authentication functionalities. The application interacts with an SQLite database to store user information, menus, and menu items.
+This Python CLI application is designed to manage a restaurant's menu and provide user authentication functionalities. The application interacts with an SQLite database to store user information, menus.
 
 ### Features
 
@@ -36,7 +36,7 @@ This Python CLI application is designed to manage a restaurant's menu and provid
 
    ```bash
    git clone https://github.com/your/repository.git
-   cd restaurant_management
+   cd KULLOWS-MUNCH
 
 <ol start="2">
   <li>Install dependencies using Pipenv:</li>
@@ -54,7 +54,7 @@ pipenv install
 python init_db.py
 </code>
 
-<p>This command will create the necessary tables (<code>users</code>, <code>menus</code>, <code>menu_items</code>) in the SQLite database (<code>restaurant.db</code>).</p>
+<p>This command will create the necessary tables (<code>users</code>, <code>menus</code>) in the SQLite database (<code>restaurant.db</code>).</p>
 
 <h2>Usage</h2>
 
@@ -84,11 +84,12 @@ pipenv run python cli.py
 
 <p><strong>Quit</strong>: Exit the application.</p>
 
-<h2>Contributing</h2>
+## Contributing
 
 <p>Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.</p>
 
-<h2>License</h2>
+## License
 
-<p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+<p>This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.</p>
+
 
