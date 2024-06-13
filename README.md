@@ -38,9 +38,9 @@ This Python CLI application is designed to manage a restaurant's menu and provid
    git clone https://github.com/your/repository.git
    cd KULLOWS-MUNCH
 
-<ol start="2">
-  <li>Install dependencies using Pipenv:</li>
-</ol>
+
+ ## Install dependencies using Pipenv:
+
 
 <code>
 pipenv install
@@ -49,30 +49,29 @@ pipenv install
 
 ## Initialize the SQLite database:
 <code>
- python init_db.py
+ (python init_db.py)
 </code>
 
 
 <p>This command will create the necessary tables (<code>users</code>, <code>menus</code>) in the SQLite database (<code>restaurant.db</code>).</p>
 
-<h2>Usage</h2>
+## Usage
 
-<ol>
-  <li>Run the CLI application:</li>
-</ol>
+
+## Run the CLI application:
 
 <code>
 pipenv run python cli.py
 </code>
 
-<p><strong>User Management</strong>:</p>
+## <strong>User Management</strong>:
 
 <ol>
   <li>Register: Create a new user account.</li>
   <li>Login: Access the application with your username and password.</li>
 </ol>
 
-<p><strong>Menu Management</strong>:</p>
+## <strong>Menu Management</strong>:
 
 <ol>
   <li>Create Menu: Add a new menu with a unique name.</li>
