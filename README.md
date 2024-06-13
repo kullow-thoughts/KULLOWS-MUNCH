@@ -48,9 +48,7 @@ pipenv install
 
 
 ## Initialize the SQLite database:
-<code>
- (python init_db.py)
-</code>
+<code>python init_db.py</code>
 
 
 <p>This command will create the necessary tables (<code>users</code>, <code>menus</code>) in the SQLite database (<code>restaurant.db</code>).</p>
