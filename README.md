@@ -46,12 +46,12 @@ This Python CLI application is designed to manage a restaurant's menu and provid
 pipenv install
 </code>
 
-<ol start="3">
-<li>Initialize the SQLite database:</li>
+
+## Initialize the SQLite database:
 <code>
-python init_db.py
+ python init_db.py
 </code>
-</ol>
+
 
 <p>This command will create the necessary tables (<code>users</code>, <code>menus</code>) in the SQLite database (<code>restaurant.db</code>).</p>
 
