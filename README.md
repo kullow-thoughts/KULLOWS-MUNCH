@@ -1,46 +1,94 @@
-# Restaurant Management System
 
-This is a simple command-line interface (CLI) application for managing a restaurant. It allows users to manage menus and dishes.
+  # Restaurant Management CLI Application
 
-## Features
+## Overview
 
-- Create, delete, and display menus
-- Add, remove, and list dishes in a menu
-- Create, delete, and display dishes
+This Python CLI application is designed to manage a restaurant's menu and provide user authentication functionalities. The application interacts with an SQLite database to store user information, menus, and menu items.
 
-## Getting Started
+### Features
+
+- **User Authentication**:
+  - Users can register with a username and password.
+  - Registered users can log in to access the application.
+
+- **Menu Management**:
+  - Create new menus with unique names.
+  - Add, view, and delete menu items within each menu.
+  - Retrieve all menus and their respective items.
+
+### Technologies Used
+
+- **SQLite**: Database to store user credentials, menus, and menu items.
+- **Python 3**: Programming language used for application logic.
+- **CLI**: Command-line interface for user interaction.
+- **Object-oriented Programming**: Organized code into classes for clear structure and functionality.
+
+## Installation
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- Pipenv
+- Python 3.x installed on your system.
+- Pip package manager.
 
-### Installation
+### Setup
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/restaurant_management.git
-    cd restaurant_management
-    ```
+1. **Clone the repository:**
 
-2. Install dependencies:
-    ```sh
-    pipenv install
-    ```
+   ```bash
+   git clone https://github.com/your/repository.git
+   cd restaurant_management
 
-3. Run the application:
-    ```sh
-    pipenv run python restaurant/cli.py
-    ```
+<ol start="2">
+  <li>Install dependencies using Pipenv:</li>
+</ol>
 
-## Usage
+<code>
+pipenv install
+</code>
 
-Follow the on-screen prompts to interact with the application. Use the menu options to navigate through different functionalities.
+<ol start="3">
+  <li>Initialize the SQLite database:</li>
+</ol>
 
-## Contributing
+<code>
+python init_db.py
+</code>
 
-Feel free to submit issues or pull requests.
+<p>This command will create the necessary tables (<code>users</code>, <code>menus</code>, <code>menu_items</code>) in the SQLite database (<code>restaurant.db</code>).</p>
 
-## License
+<h2>Usage</h2>
 
-This project is licensed under the MIT License.
+<ol>
+  <li>Run the CLI application:</li>
+</ol>
+
+<code>
+pipenv run python cli.py
+</code>
+
+<p><strong>User Management</strong>:</p>
+
+<ol>
+  <li>Register: Create a new user account.</li>
+  <li>Login: Access the application with your username and password.</li>
+</ol>
+
+<p><strong>Menu Management</strong>:</p>
+
+<ol>
+  <li>Create Menu: Add a new menu with a unique name.</li>
+  <li>View Menu: Display all menus available.</li>
+  <li>Add Item to Menu: Include a new food item with its price to a specific menu.</li>
+  <li>Delete Menu: Remove a menu from the database, including all associated items.</li>
+</ol>
+
+<p><strong>Quit</strong>: Exit the application.</p>
+
+<h2>Contributing</h2>
+
+<p>Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.</p>
+
+<h2>License</h2>
+
+<p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+
