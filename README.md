@@ -81,6 +81,6 @@ This Python CLI application is designed to manage a restaurant's menu and provid
 
 ## License
 
-<p>This project is licensed under the MIT License - see the [LICENSE] file for details.</p>
+<p>This project is licensed under the MIT License - see the <link>[LICENSE]</link> file for details.</p>
 
 
