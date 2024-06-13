@@ -58,6 +58,21 @@ class Database:
         else:
             return None
 
+    def get_all_users(self):
+        cursor = self.execute_query("SELECT * FROM users")
+        rows = cursor.fetchall()
+        return [User(id=row[0], username=row[1], password=row[2]) for row in rows]
+
+    def delete_user(self, user_id):
+        try:
+            cursor = self.execute_query("DELETE FROM users WHERE id=?", (user_id,))
+            self.conn.commit()
+            print(f"User with ID {user_id} deleted successfully.")
+        except sqlite3.IntegrityError:
+            print(f"Error deleting user with ID {user_id}.")
+        finally:
+            cursor.close()
+
     # Menu-related methods
 
     def create_menu(self, name):
@@ -88,8 +103,19 @@ class Database:
             cursor.close()
 
     def get_items_in_menu(self, menu_id):
-        cursor = self.execute_query("SELECT * FROM menu_items WHERE menu_id=?", (menu_id,))
-        return cursor.fetchall()
+        try:
+            cursor = self.execute_query("SELECT * FROM menu_items WHERE menu_id=?", (menu_id,))
+            items = cursor.fetchall()
+
+            if items:
+                return items
+            else:
+                print(f"No items found for menu_id: {menu_id}")
+                return []
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return []
 
     def add_item_to_menu(self, menu_id, name, price):
         try:
