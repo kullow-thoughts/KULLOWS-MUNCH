@@ -41,15 +41,12 @@ This Python CLI application is designed to manage a restaurant's menu and provid
 <ol start="2">
   <li>Install dependencies using Pipenv:</li>
 </ol>
-
 <code>
 pipenv install
 </code>
-
 <ol start="3">
   <li>Initialize the SQLite database:</li>
 </ol>
-
 <code>
 python init_db.py
 </code>
