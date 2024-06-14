@@ -45,18 +45,15 @@ def logged_in_menu(db, user):
     while True:
         print(f"\n--- Logged in as {user.username} ---")
         print("1. View Menus")
-        print("2. Place Order")
-        print("3. Manage Users")
-        print("4. Logout")
+        print("2. Manage Users")
+        print("3. Logout")
         choice = input("Choose an option: ")
 
         if choice == '1':
             manage_menus(db)
         elif choice == '2':
-            place_order(db)
-        elif choice == '3':
             manage_users(db)
-        elif choice == '4':
+        elif choice == '3':
             print("Logged out.")
             break
         else:
@@ -92,8 +89,8 @@ def manage_menus(db):
             menu_id = input("Enter menu ID to delete: ")
             if db.delete_menu(menu_id):
                 print(f"Menu with ID {menu_id} deleted successfully.")
-            else:
-                print(f"Menu with ID {menu_id} does not exist.")
+            # else:
+            #     print(f"Menu with ID {menu_id} does not exist.")
         elif choice == '4':
             menu_id = input("Enter menu ID to view items: ")
             items = db.get_items_in_menu(menu_id)
@@ -115,8 +112,8 @@ def manage_menus(db):
             item_id = input("Enter item ID to delete: ")
             if db.delete_item_from_menu(item_id):
                 print(f"Item with ID {item_id} deleted successfully.")
-            else:
-                print(f"Item with ID {item_id} does not exist.")
+            # else:
+            #     print(f"Item with ID {item_id} does not exist.")
         elif choice == '7':
             break
         else:
@@ -148,8 +145,8 @@ def manage_users(db):
         else:
             print("Invalid choice. Please try again.")
 
-def place_order(db):
-    print("Functionality to place an order is not implemented yet.")
+# def place_order(db):
+#     print("Functionality to place an order is not implemented yet.")
 
 if __name__ == "__main__":
     db = Database('restaurant.db')
